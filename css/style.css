@@ -1,0 +1,462 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+	margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+
+body {
+	font-family: 'Lora', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Serif Pro', serif;
+}
+
+.container {
+	max-width: 1265px;
+	margin: auto;
+}
+
+header {
+	background-color: #96A6C0;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+	padding: 9px 0 5px;
+	left: 10%;
+}
+
+
+.navigation img {
+	padding-right: 40px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+}
+
+.navbar li {
+	padding: 0 40px;
+	align-items: center;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navtools {
+	display: flex;
+	padding-left: 40px;
+}
+
+.navPhone {
+	padding-right: 37px;
+	color: #000000;
+}
+
+.navPhone p {
+	color: #000000;
+}
+
+.phone {
+	font-size: 25px;
+}
+
+.phoneCall {
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+.langPage {
+	align-self: center;
+}
+
+.header__body {}
+
+.header__body img {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.header__body-width {
+	max-width: 1265px;
+	margin: auto;
+}
+
+.header__content {
+	position: absolute;
+	z-index: 8000;
+	top: 226px;
+	left: 30%;
+	display: block;
+	max-width: 800px;
+}
+
+h1 {
+	font-size: 85px;
+	line-height: 87.12px;
+	color: #302F34;
+	font-style: italic;
+	font-weight: 500;
+}
+
+.header__content h1 {
+	padding-bottom: 19px;
+}
+
+.header__content p {
+	color: #302F34;
+	font-size: 20px;
+	line-height: 35px;
+	font-weight: 500;
+	padding-bottom: 35px;
+}
+
+.buttons__group {}
+
+.button-bigue {
+	background-color: #FFB373;
+	border: none;
+	border: #FFB373 5px solid;
+	box-sizing: border-box;
+	color: #302F34;
+	border-radius: 35px;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.button-bigue:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	border: #000000 5px solid;
+	transition: .25s;
+}
+
+.button-clear {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border: #000000 5px solid;
+	box-sizing: border-box;
+	color: #302F34;
+	border-radius: 35px;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.button-clear:hover {
+	background-color: #FFB373;
+	border: #FFB373 5px solid;
+	cursor: pointer;
+	transition: .25s;
+}
+
+.header__button {
+	padding: 28px 63px;
+	color: #302F34;
+
+	margin-right: 20px;
+}
+
+.aboutUs {
+	padding: 200px 0;
+}
+
+.aboutUs h1 {
+	text-align: center;
+}
+
+.aboutUs__body {
+	display: flex;
+}
+
+.aboutUs__body img {
+	margin-right: 20px;
+	border-left: #FFB373 49px solid;
+	padding: 20px 0 0 20px;
+	border-top: #FFB373 58px solid;
+}
+
+.aboutUs__group {}
+
+.aboutUs__group p {
+	padding-top: 63px;
+}
+
+.text {
+	font-size: 20px;
+	line-height: 45px;
+	color: #302F34;
+}
+
+.aboutUs__button {
+	padding: 20px 46px;
+	margin-top: 55px;
+}
+
+.interior {
+	max-width: 1265px;
+	margin: auto;
+}
+
+.interior h1 {
+	text-align: center;
+}
+
+.interior__body {
+	display: flex;
+	padding-bottom: 235px;
+}
+
+.interior__body img {
+	margin-left: 20px;
+	padding: 20px 20px 0 0;
+	border-top: #FFB373 58px solid;
+	border-right: #FFB373 49px solid;
+}
+
+.interior__group {
+	padding-top: 65px;
+}
+
+.interior__floors {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 337px;
+	box-shadow: 3px 6px 15px #96A6C0;
+	border-radius: 25px;
+	margin-top: 64px;
+}
+
+.interior__floors button:first-child {
+	margin-top: 33px;
+}
+
+.interior__floors button:last-child {
+	margin-bottom: 33px;
+}
+
+.button__floor {
+	padding: 9.5px 82px;
+	margin: 6.5px;
+}
+
+.types {}
+
+.types h1 {
+	text-align: center;
+	padding-bottom: 95px;
+}
+
+.types__body {}
+
+.types__card {
+	z-index: 4;
+	opacity: 1;
+	position: absolute;
+	padding-bottom: 112px;
+}
+
+.types__card img {
+	width: 100%;
+}
+
+.types__card1 {}
+
+.types__card2 {
+	padding-top: 750px;
+}
+
+.types__card3 {
+	padding-top: 1500px;
+}
+
+.types__card4 {
+	padding-top: 2250px;
+	padding-bottom: 1000px;
+}
+
+.card__body {
+	z-index: 3;
+	position: absolute;
+
+}
+
+.card__body1 {
+	z-index: 3;
+	position: absolute;
+	top: -50px;
+	left: 70px;
+	padding-top: 95px;
+
+}
+
+.card__body2 {
+	top: -50px;
+	left: 70px;
+	padding-top: 850px;
+}
+
+.card__body3 {
+	top: -50px;
+	left: 70px;
+	padding-top: 1600px;
+}
+
+.card__body4 {
+	top: -50px;
+	left: 70px;
+	padding-top: 2350px;
+}
+
+.card__h2 {
+	font-size: 80px;
+	line-height: 95px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.card__buttons {
+	display: grid;
+	max-width: 280px;
+}
+
+.button__types {
+	padding: 22.5px 63px;
+	margin: 35px 0;
+}
+
+.button__types:hover {
+	color: #ffffff;
+	border: #FFFFFF 5px solid;
+	transition: .25s;
+}
+
+.button__types-clear {
+	padding: 22.5px 77px;
+	margin-bottom: 65px;
+	color: #ffffff;
+	border: #FFFFFF 5px solid;
+}
+
+.button__types-clear:hover {
+	color: #302F34;
+}
+
+.types__card__footer {
+	display: flex;
+	align-items: center;
+}
+
+.types__text {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22.5px;
+	color: #ffffff;
+
+}
+
+.types__places {
+	background: url(https://img.icons8.com/nolan/96/bed.png) no-repeat;
+	padding: 25px 110px;
+}
+
+.types__square {
+	background: url(https://img.icons8.com/nolan/96/square.png) no-repeat;
+	padding: 25px 100px;
+}
+
+.types__commission {
+	background: url(https://img.icons8.com/nolan/96/thumb-up.png) no-repeat;
+	padding: 25px 105px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	background-color: #96A6C0;
+	padding: 400px;
+}
